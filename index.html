@@ -67,13 +67,14 @@
                 </div>
             </div>
 
-            <!-- Galleria Foto Casa 1 -->
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-3 mb-6">
+            <!-- Galleria Foto Casa 1 (6 Foto) -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mb-6">
                 <img src="casa1-1.png" alt="Montefortino Sibillini House 1" class="w-full h-44 object-cover rounded-xl shadow">
                 <img src="casa1-2.jpg" alt="Montefortino Sibillini House 2" class="w-full h-44 object-cover rounded-xl shadow">
                 <img src="casa1-3.jpeg" alt="Montefortino Sibillini House 3" class="w-full h-44 object-cover rounded-xl shadow">
                 <img src="casa1-4.jpg" alt="Montefortino Sibillini House 4" class="w-full h-44 object-cover rounded-xl shadow">
                 <img src="casa1-5.jpg" alt="Montefortino Sibillini House 5" class="w-full h-44 object-cover rounded-xl shadow">
+                <img src="casa1-6.png" alt="Montefortino Sibillini House 6" class="w-full h-44 object-cover rounded-xl shadow">
             </div>
 
             <!-- Dotazioni Casa 1 -->
@@ -117,14 +118,15 @@
                 </div>
             </div>
 
-            <!-- Galleria Foto Casa 2 -->
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mb-6">
+            <!-- Galleria Foto Casa 2 (7 Foto) -->
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3 mb-6">
                 <img src="baita-1.jpg" alt="La Baita dei Sibillini 1" class="w-full h-44 object-cover rounded-xl shadow">
                 <img src="baita-2.jpg" alt="La Baita dei Sibillini 2" class="w-full h-44 object-cover rounded-xl shadow">
                 <img src="baita-3.jpg" alt="La Baita dei Sibillini 3" class="w-full h-44 object-cover rounded-xl shadow">
                 <img src="baita-4.jpg" alt="La Baita dei Sibillini 4" class="w-full h-44 object-cover rounded-xl shadow">
                 <img src="baita-5.jpg" alt="La Baita dei Sibillini 5" class="w-full h-44 object-cover rounded-xl shadow">
                 <img src="baita-6.jpg" alt="La Baita dei Sibillini 6" class="w-full h-44 object-cover rounded-xl shadow">
+                <img src="baita-7.jpg" alt="La Baita dei Sibillini 7" class="w-full h-44 object-cover rounded-xl shadow">
             </div>
 
             <!-- Dotazioni Casa 2 -->
@@ -210,32 +212,58 @@
         </div>
     </section>
 
-    <!-- SEZIONE ATTRAZIONI E DINTORNI -->
+    <!-- SEZIONE ATTRAZIONI E DINTORNI (Con Immagini) -->
     <section class="max-w-6xl mx-auto my-16 px-4">
         <h3 class="text-3xl font-bold text-center mb-2 text-slate-900">🏞️ Cosa Visitare nei Dintorni</h3>
         <p class="text-center text-slate-600 mb-10">Le attrazioni naturali e spirituali più belle a pochi minuti da noi</p>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="bg-white p-5 rounded-2xl shadow border border-slate-200 text-center">
-                <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center mx-auto mb-3 text-xl"><i class="fas fa-church"></i></div>
-                <h4 class="font-bold text-lg mb-1">Madonna dell'Ambro</h4>
-                <p class="text-xs text-slate-500">Il celebre Santuario incastonato tra le montagne dei Sibillini.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+            
+            <!-- Madonna dell'Ambro -->
+            <div class="bg-white rounded-2xl shadow border border-slate-200 overflow-hidden flex flex-col">
+                <img src="madonadellambro.jpg" alt="Madonna dell'Ambro" class="w-full h-40 object-cover">
+                <div class="p-4 text-center flex-grow">
+                    <h4 class="font-bold text-base text-slate-900 mb-1">Madonna dell'Ambro</h4>
+                    <p class="text-xs text-slate-500">Il celebre Santuario incastonato tra le montagne dei Sibillini.</p>
+                </div>
             </div>
-            <div class="bg-white p-5 rounded-2xl shadow border border-slate-200 text-center">
-                <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center mx-auto mb-3 text-xl"><i class="fas fa-hiking"></i></div>
-                <h4 class="font-bold text-lg mb-1">Gole dell'Infernaccio</h4>
-                <p class="text-xs text-slate-500">Una delle escursioni naturalistiche più spettacolari d'Italia.</p>
+
+            <!-- Gole dell'Infernaccio -->
+            <div class="bg-white rounded-2xl shadow border border-slate-200 overflow-hidden flex flex-col">
+                <img src="goledellinfernaccio.jpg" alt="Gole dell'Infernaccio" class="w-full h-40 object-cover">
+                <div class="p-4 text-center flex-grow">
+                    <h4 class="font-bold text-base text-slate-900 mb-1">Gole dell'Infernaccio</h4>
+                    <p class="text-xs text-slate-500">Una delle escursioni naturalistiche più spettacolari d'Italia.</p>
+                </div>
             </div>
-            <div class="bg-white p-5 rounded-2xl shadow border border-slate-200 text-center">
-                <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center mx-auto mb-3 text-xl"><i class="fas fa-water"></i></div>
-                <h4 class="font-bold text-lg mb-1">Lago di Fiastra</h4>
-                <p class="text-xs text-slate-500">Acque turchesi perfette per relax, bagni estivi e passeggiate.</p>
+
+            <!-- Lago di Fiastra -->
+            <div class="bg-white rounded-2xl shadow border border-slate-200 overflow-hidden flex flex-col">
+                <img src="lagodifiastra.jpg" alt="Lago di Fiastra" class="w-full h-40 object-cover">
+                <div class="p-4 text-center flex-grow">
+                    <h4 class="font-bold text-base text-slate-900 mb-1">Lago di Fiastra</h4>
+                    <p class="text-xs text-slate-500">Acque turchesi perfette per relax, bagni estivi e passeggiate.</p>
+                </div>
             </div>
-            <div class="bg-white p-5 rounded-2xl shadow border border-slate-200 text-center">
-                <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center mx-auto mb-3 text-xl"><i class="fas fa-place-of-worship"></i></div>
-                <h4 class="font-bold text-lg mb-1">Eremo di San Leonardo</h4>
-                <p class="text-xs text-slate-500">Luogo magico e di pace al Volubrio, immerso nei boschi.</p>
+
+            <!-- Lago di San Ruffino -->
+            <div class="bg-white rounded-2xl shadow border border-slate-200 overflow-hidden flex flex-col">
+                <img src="lagodisanruffino.jpg" alt="Lago di San Ruffino" class="w-full h-40 object-cover">
+                <div class="p-4 text-center flex-grow">
+                    <h4 class="font-bold text-base text-slate-900 mb-1">Lago di San Ruffino</h4>
+                    <p class="text-xs text-slate-500">Splendido specchio d'acqua ideale per passeggiate in natura ed escursioni.</p>
+                </div>
             </div>
+
+            <!-- Eremo di San Leonardo -->
+            <div class="bg-white rounded-2xl shadow border border-slate-200 overflow-hidden flex flex-col">
+                <img src="eramo.jpg" alt="Eremo di San Leonardo" class="w-full h-40 object-cover">
+                <div class="p-4 text-center flex-grow">
+                    <h4 class="font-bold text-base text-slate-900 mb-1">Eremo di San Leonardo</h4>
+                    <p class="text-xs text-slate-500">Luogo magico e di pace al Volubrio, immerso nei boschi.</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -265,7 +293,7 @@
                     <p class="text-slate-700 italic text-sm mb-4">"Casa piccola e accogliente in un borghetto delizioso, a pochi kilometri da Montefortino e Montemonaco, perfetta per esplorare i Sibillini. Super consigliato!"</p>
                 </div>
                 <div class="border-t pt-3 flex justify-between items-center text-xs text-slate-500">
-                    <span class="font-bold text-slate-800">Angelo </span>
+                    <span class="font-bold text-slate-800">Angelo</span>
                     <span>Ospiti su Airbnb</span>
                 </div>
             </div>
@@ -274,7 +302,7 @@
                     <div class="text-amber-400 mb-3 text-sm">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                    <p class="text-slate-700 italic text-sm mb-4">"Abbiamo trascorso due notti piacevoli  con la nostra famiglia posto tranquillo e proprietari gentili e disponibili lo consiglio a tutti quelli che si vogliono rilassare e stare a contatto con la natura in una casa accogliente."</p>
+                    <p class="text-slate-700 italic text-sm mb-4">"Abbiamo trascorso due notti piacevoli con la nostra famiglia posto tranquillo e proprietari gentili e disponibili lo consiglio a tutti quelli che si vogliono rilassare e stare a contatto con la natura in una casa accogliente."</p>
                 </div>
                 <div class="border-t pt-3 flex justify-between items-center text-xs text-slate-500">
                     <span class="font-bold text-slate-800">Vincenzo B.</span>
