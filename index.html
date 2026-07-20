@@ -6,14 +6,27 @@
     <title>Case Vacanze Monti Sibillini | Relax, Natura e Sport</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .floating-wa {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+    </style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans">
+
+    <!-- WhatsApp Floating Button (Sempre Visibile) -->
+    <a href="https://wa.me/393492203994" target="_blank" class="floating-wa bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-transform hover:scale-110">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
 
     <!-- Header / Navbar -->
     <nav class="bg-emerald-900 text-white p-4 sticky top-0 z-50 shadow-md">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
             <h1 class="text-xl font-bold tracking-wide">⛰️ Sibillini Holiday Houses</h1>
-            <a href="https://wa.me/393492203994" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full font-semibold text-sm flex items-center gap-2 shadow">
+            <a href="https://wa.me/393492203994" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full font-semibold text-sm flex items-center gap-2 shadow">
                 <i class="fab fa-whatsapp text-lg"></i> Contattaci
             </a>
         </div>
@@ -25,78 +38,122 @@
             <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Le Tue Vacanze nel Cuore dei Monti Sibillini</h2>
             <p class="text-emerald-100 text-lg md:text-xl mb-6">Scegli la tua struttura ideale tra relax, natura incontaminata e sport.</p>
             <div class="inline-block bg-amber-400 text-slate-900 font-bold px-5 py-2.5 rounded-full text-sm shadow-lg">
-                🐾 I cani e tutti gli animali domestici sono accettati GRATIS in tutte le strutture!
+                🐾 I cani e tutti gli animali domestici sono accettati GRATIS!
             </div>
         </div>
     </header>
 
-    <!-- Sezione Strutture & Gallerie -->
+    <!-- Sezione Strutture -->
     <section class="max-w-6xl mx-auto my-12 px-4 space-y-16">
         
-        <!-- Casa 1: Montefortino Sibillini House -->
+        <!-- CASA 1: Montefortino Sibillini House -->
         <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8 border border-slate-200">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
                 <div>
                     <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full">Casa Vacanze</span>
                     <h3 class="text-3xl font-extrabold text-slate-900 mt-2">Montefortino Sibillini House</h3>
-                    <p class="text-slate-600">Camera patronale, cameretta, soggiorno accogliente e angolo caffè.</p>
+                    <p class="text-slate-600">Palazzo Panoramico, Via D. Sbarra, 18, 63858 Montefortino FM</p>
                 </div>
-                <a href="https://wa.me/39XXXXXXXXXX?text=Ciao,%20vorrei%20informazioni%20su%20Montefortino%20Sibillini%20House" class="mt-4 md:mt-0 bg-emerald-700 hover:bg-emerald-800 text-white font-bold px-6 py-3 rounded-xl transition shadow">
-                    <i class="fab fa-whatsapp mr-2"></i>Richiedi Disponibilità
-                </a>
+                <div class="mt-4 md:mt-0 flex flex-wrap gap-2">
+                    <a href="https://wa.me/393492203994?text=Ciao,%20vorrei%20informazioni%20su%20Montefortino%20Sibillini%20House" target="_blank" class="bg-emerald-700 hover:bg-emerald-800 text-white font-bold px-4 py-2 rounded-xl transition text-sm flex items-center gap-2">
+                        <i class="fab fa-whatsapp text-base"></i> WhatsApp
+                    </a>
+                    <a href="mailto:montefortino.sibillini.house@gmail.com" class="bg-slate-700 hover:bg-slate-800 text-white font-bold px-4 py-2 rounded-xl transition text-sm flex items-center gap-2">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                    <a href="https://share.google/Yz7QaX1cXo9kB04ZP" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded-xl transition text-sm flex items-center gap-2">
+                        <i class="fas fa-map-marker-alt"></i> Mappa
+                    </a>
+                </div>
             </div>
 
             <!-- Galleria Foto Casa 1 -->
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
-                <img src="casa1-1.png" alt="Montefortino Sibillini House 1" class="w-full h-44 object-cover rounded-xl shadow hover:opacity-90 transition">
-                <img src="casa1-2.jpg" alt="Montefortino Sibillini House 2" class="w-full h-44 object-cover rounded-xl shadow hover:opacity-90 transition">
-                <img src="casa1-3.jpeg" alt="Montefortino Sibillini House 3" class="w-full h-44 object-cover rounded-xl shadow hover:opacity-90 transition">
-                <img src="casa1-4.jpg" alt="Montefortino Sibillini House 4" class="w-full h-44 object-cover rounded-xl shadow hover:opacity-90 transition">
-                <img src="casa1-5.jpg" alt="Montefortino Sibillini House 5" class="w-full h-44 object-cover rounded-xl shadow hover:opacity-90 transition">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-3 mb-6">
+                <img src="casa1-1.png" alt="Montefortino Sibillini House 1" class="w-full h-44 object-cover rounded-xl shadow">
+                <img src="casa1-2.jpg" alt="Montefortino Sibillini House 2" class="w-full h-44 object-cover rounded-xl shadow">
+                <img src="casa1-3.jpeg" alt="Montefortino Sibillini House 3" class="w-full h-44 object-cover rounded-xl shadow">
+                <img src="casa1-4.jpg" alt="Montefortino Sibillini House 4" class="w-full h-44 object-cover rounded-xl shadow">
+                <img src="casa1-5.jpg" alt="Montefortino Sibillini House 5" class="w-full h-44 object-cover rounded-xl shadow">
             </div>
 
-            <div class="mt-4 text-sm text-emerald-800 font-semibold flex items-center gap-2">
-                <span>🐾 Animale domestico in viaggio con te? Soggiorna gratis!</span>
+            <!-- Dotazioni Casa 1 -->
+            <div class="bg-slate-50 p-4 rounded-xl mb-4 border border-slate-200">
+                <h4 class="font-bold text-slate-900 mb-3 text-sm uppercase tracking-wider">Dotazioni della struttura:</h4>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-sm text-slate-700">
+                    <div><i class="fas fa-utensils text-emerald-600 mr-2"></i>Cucina attrezzata</div>
+                    <div><i class="fas fa-bath text-emerald-600 mr-2"></i>Bagno privato con Vasca</div>
+                    <div><i class="fas fa-parking text-emerald-600 mr-2"></i>Parcheggio Gratuito</div>
+                    <div><i class="fas fa-mountain text-emerald-600 mr-2"></i>Balcone Panoramico</div>
+                    <div><i class="fas fa-soap text-emerald-600 mr-2"></i>Lavatrice</div>
+                    <div><i class="fas fa-wind text-emerald-600 mr-2"></i>Asciugacapelli</div>
+                    <div><i class="fas fa-couch text-emerald-600 mr-2"></i>Divano</div>
+                    <div><i class="fas fa-tv text-emerald-600 mr-2"></i>TV</div>
+                </div>
+            </div>
+
+            <div class="text-sm text-emerald-800 font-semibold flex items-center gap-2">
+                <span>🐾 Animale domestico in viaggio con te? Soggiorna GRATIS!</span>
             </div>
         </div>
 
-        <!-- Casa 2: La Baita dei Sibillini -->
+        <!-- CASA 2: La Baita dei Sibillini -->
         <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8 border border-slate-200">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
                 <div>
                     <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full">Baita in Montagna</span>
                     <h3 class="text-3xl font-extrabold text-slate-900 mt-2">La Baita dei Sibillini</h3>
-                    <p class="text-slate-600">Atmosfera calda e autentica per amanti della montagna e della tranquillità.</p>
+                    <p class="text-slate-600">Località Sossasso, 9, 63858 Sossasso FM</p>
                 </div>
-                <a href="https://wa.me/393492203994?text=Ciao,%20vorrei%20informazioni%20su%20La%20Baita%20dei%20Sibillini" class="mt-4 md:mt-0 bg-amber-700 hover:bg-amber-800 text-white font-bold px-6 py-3 rounded-xl transition shadow">
-                    <i class="fab fa-whatsapp mr-2"></i>Richiedi Disponibilità
-                </a>
+                <div class="mt-4 md:mt-0 flex flex-wrap gap-2">
+                    <a href="https://wa.me/393492203994?text=Ciao,%20vorrei%20informazioni%20su%20La%20Baita%20dei%20Sibillini" target="_blank" class="bg-amber-700 hover:bg-amber-800 text-white font-bold px-4 py-2 rounded-xl transition text-sm flex items-center gap-2">
+                        <i class="fab fa-whatsapp text-base"></i> WhatsApp
+                    </a>
+                    <a href="mailto:labaitadeisibillini@gmail.com" class="bg-slate-700 hover:bg-slate-800 text-white font-bold px-4 py-2 rounded-xl transition text-sm flex items-center gap-2">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                    <a href="https://share.google/t6D1HxYctZWlDO9pO" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded-xl transition text-sm flex items-center gap-2">
+                        <i class="fas fa-map-marker-alt"></i> Mappa
+                    </a>
+                </div>
             </div>
 
             <!-- Galleria Foto Casa 2 -->
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
-                <img src="baita-1.jpg" alt="La Baita dei Sibillini 1" class="w-full h-44 object-cover rounded-xl shadow hover:opacity-90 transition">
-                <img src="baita-2.jpg" alt="La Baita dei Sibillini 2" class="w-full h-44 object-cover rounded-xl shadow hover:opacity-90 transition">
-                <img src="baita-3.jpg" alt="La Baita dei Sibillini 3" class="w-full h-44 object-cover rounded-xl shadow hover:opacity-90 transition">
-                <img src="baita-4.jpg" alt="La Baita dei Sibillini 4" class="w-full h-44 object-cover rounded-xl shadow hover:opacity-90 transition">
-                <img src="baita-5.jpg" alt="La Baita dei Sibillini 5" class="w-full h-44 object-cover rounded-xl shadow hover:opacity-90 transition">
-                <img src="baita-6.jpg" alt="La Baita dei Sibillini 6" class="w-full h-44 object-cover rounded-xl shadow hover:opacity-90 transition">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mb-6">
+                <img src="baita-1.jpg" alt="La Baita dei Sibillini 1" class="w-full h-44 object-cover rounded-xl shadow">
+                <img src="baita-2.jpg" alt="La Baita dei Sibillini 2" class="w-full h-44 object-cover rounded-xl shadow">
+                <img src="baita-3.jpg" alt="La Baita dei Sibillini 3" class="w-full h-44 object-cover rounded-xl shadow">
+                <img src="baita-4.jpg" alt="La Baita dei Sibillini 4" class="w-full h-44 object-cover rounded-xl shadow">
+                <img src="baita-5.jpg" alt="La Baita dei Sibillini 5" class="w-full h-44 object-cover rounded-xl shadow">
+                <img src="baita-6.jpg" alt="La Baita dei Sibillini 6" class="w-full h-44 object-cover rounded-xl shadow">
             </div>
 
-            <div class="mt-4 text-sm text-amber-800 font-semibold flex items-center gap-2">
+            <!-- Dotazioni Casa 2 -->
+            <div class="bg-slate-50 p-4 rounded-xl mb-4 border border-slate-200">
+                <h4 class="font-bold text-slate-900 mb-3 text-sm uppercase tracking-wider">Dotazioni della struttura:</h4>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-sm text-slate-700">
+                    <div><i class="fas fa-fire-burner text-amber-600 mr-2"></i>Piano ad Induzione</div>
+                    <div><i class="fas fa-fire text-amber-600 mr-2"></i>Camino Caratteristico</div>
+                    <div><i class="fas fa-wifi text-amber-600 mr-2"></i>Wi-Fi Gratuito</div>
+                    <div><i class="fas fa-parking text-amber-600 mr-2"></i>Parcheggio Gratuito</div>
+                    <div><i class="fas fa-shower text-amber-600 mr-2"></i>Bagno privato</div>
+                    <div><i class="fas fa-wind text-amber-600 mr-2"></i>Asciugacapelli</div>
+                    <div><i class="fas fa-tv text-amber-600 mr-2"></i>TV</div>
+                </div>
+            </div>
+
+            <div class="text-sm text-amber-800 font-semibold flex items-center gap-2">
                 <span>🐾 Anche qui i cani sono i benvenuti senza alcun costo aggiuntivo!</span>
             </div>
         </div>
 
     </section>
 
-    <!-- Servizi & Dintorni a 1 KM -->
+    <!-- Servizi a 1 KM -->
     <section class="bg-emerald-900 text-white py-12 px-4">
         <div class="max-w-6xl mx-auto">
             <h3 class="text-3xl font-bold text-center mb-2">⚽ Sport, Relax e Divertimento a 1 KM</h3>
             <p class="text-center text-emerald-200 mb-8">Piscina, campi da Padel e Calcetto, area picnic a soli 1000 metri dalle strutture.</p>
 
-            <!-- Foto Servizi -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="bg-emerald-800 rounded-xl overflow-hidden shadow">
                     <img src="piscina.jfif" alt="Piscina Panoramica" class="w-full h-40 object-cover">
@@ -118,14 +175,41 @@
         </div>
     </section>
 
+    <!-- SEZIONE ATTRAZIONI E DINTORNI -->
+    <section class="max-w-6xl mx-auto my-16 px-4">
+        <h3 class="text-3xl font-bold text-center mb-2 text-slate-900">🏞️ Cosa Visitare nei Dintorni</h3>
+        <p class="text-center text-slate-600 mb-10">Le attrazioni naturali e spirituali più belle a pochi minuti da noi</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white p-5 rounded-2xl shadow border border-slate-200 text-center">
+                <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center mx-auto mb-3 text-xl"><i class="fas fa-church"></i></div>
+                <h4 class="font-bold text-lg mb-1">Madonna dell'Ambro</h4>
+                <p class="text-xs text-slate-500">Il celebre Santuario incastonato tra le montagne dei Sibillini.</p>
+            </div>
+            <div class="bg-white p-5 rounded-2xl shadow border border-slate-200 text-center">
+                <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center mx-auto mb-3 text-xl"><i class="fas fa-hiking"></i></div>
+                <h4 class="font-bold text-lg mb-1">Gole dell'Infernaccio</h4>
+                <p class="text-xs text-slate-500">Una delle escursioni naturalistiche più spettacolari d'Italia.</p>
+            </div>
+            <div class="bg-white p-5 rounded-2xl shadow border border-slate-200 text-center">
+                <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center mx-auto mb-3 text-xl"><i class="fas fa-water"></i></div>
+                <h4 class="font-bold text-lg mb-1">Lago di Fiastra</h4>
+                <p class="text-xs text-slate-500">Acque turchesi perfette per relax, bagni estivi e passeggiate.</p>
+            </div>
+            <div class="bg-white p-5 rounded-2xl shadow border border-slate-200 text-center">
+                <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center mx-auto mb-3 text-xl"><i class="fas fa-place-of-worship"></i></div>
+                <h4 class="font-bold text-lg mb-1">Eremo di San Leonardo</h4>
+                <p class="text-xs text-slate-500">Luogo magico e di pace al Volubrio, immerso nei boschi.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- SEZIONE RECENSIONI -->
     <section class="max-w-6xl mx-auto my-16 px-4">
         <h3 class="text-3xl font-bold text-center mb-2 text-slate-900">⭐ Cosa Dicono i Nostri Ospiti</h3>
         <p class="text-center text-slate-600 mb-10">Le opinioni reali di chi ha soggiornato da noi</p>
 
         <div class="grid md:grid-cols-3 gap-6">
-            
-            <!-- Recensione 1 -->
             <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-200 flex flex-col justify-between">
                 <div>
                     <div class="text-amber-400 mb-3 text-sm">
@@ -138,8 +222,6 @@
                     <span>Ospiti su Booking</span>
                 </div>
             </div>
-
-            <!-- Recensione 2 -->
             <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-200 flex flex-col justify-between">
                 <div>
                     <div class="text-amber-400 mb-3 text-sm">
@@ -152,8 +234,6 @@
                     <span>Ospiti su Airbnb</span>
                 </div>
             </div>
-
-            <!-- Recensione 3 -->
             <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-200 flex flex-col justify-between">
                 <div>
                     <div class="text-amber-400 mb-3 text-sm">
@@ -166,7 +246,6 @@
                     <span>Ospite diretto</span>
                 </div>
             </div>
-
         </div>
     </section>
 
